@@ -6,7 +6,7 @@ async function bootstrap() {
 
   // Allow requests from specific origin
   app.enableCors({
-    origin: 'http://localhost:3001',
+    origin: 'http://localhost:8101',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   });

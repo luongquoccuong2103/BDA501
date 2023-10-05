@@ -10,11 +10,11 @@ import { ProductService } from './product/product.service';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
+      host: 'db',
       port: 5432,
-      username: 'root',
-      password: 'root',
-      database: 'root',
+      username: 'postgres',
+      password: 'postgres',
+      database: 'products',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
     }),
